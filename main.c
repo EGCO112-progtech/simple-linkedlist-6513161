@@ -103,8 +103,9 @@ int main(int argc, const char *argv[]) {
 
    */
   p = head;
-  while (tmp != NULL) {
+  while (p != NULL) {
     tmp = p;
+    printf("\ndeclaring %p",tmp);
     p = p->next;
     free(tmp);
   }
